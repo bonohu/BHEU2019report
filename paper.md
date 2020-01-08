@@ -26,11 +26,11 @@ bibliography: paper.bib
 # Give the state-of-the art/plan
 
 Gene expression data have been archived in public repositories, the NCBI Gene Expression Omnibus (GEO; https://www.ncbi.nlm.nih.gov/geo/) and the EBI ArrayExpress (AE; https://www.ebi.ac.uk/arrayexpress/). Unlike the International Nucleotide Sequence Database (https://www.insdc.org/), these two databases have not been exchanging data with each other. Furthermore, the DNA DataBank of Japan (DDBJ) in the National Institute of Genetics started a similar repository called the Genomic Expression Archive (GEA; https://www.ddbj.nig.ac.jp/gea/) in 2018. Hence there is a need for integration of these public gene expression databases.
-Thus, we have maintained an index of these public gene expression databases, called All Of gene Expression (AOEï¼› https://aoe.dbcls.jp/en) to integrate gene expression data and make them all searchable together.
+Thus, we have maintained an index of these public gene expression databases, called All Of gene Expression (AOE; https://aoe.dbcls.jp/en) to integrate gene expression data and make them all searchable together.
 
 During the DBCLS/NDBC 2019 BioHackathon, we worked on the refinement of Reference Expression Dataset (RefEx; https://refex.dbcls.jp/?lang=en) for gene expression analysis in order to make gene expression data reusable. The gene expression data to integrate in the hackathon were mainly project-based, and those included those of FANTOM5[@Kawaji:2017], GTEx v8, fly and rice.
 
-We felt that users wanted to reuse data from FANTOM6 project which was just published with bioRxiv preprint (https://doi.org/10.1101/700864; http://fantom.gsc.riken.jp/6/).ã€€The data consists of the large-scale expression profiles after the knockdown of long non-coding RNAs (lncRNAs) using several technologies including antisense oligo (ASO) and siRNA.
+We felt that users wanted to reuse data from FANTOM6 project which was just published with bioRxiv preprint (https://doi.org/10.1101/700864; http://fantom.gsc.riken.jp/6/). The data consists of the large-scale expression profiles after the knockdown of long non-coding RNAs (lncRNAs) using several technologies including antisense oligo (ASO) and siRNA.
 
 Thus, we tackled the FANTOM6 data in the ELIXIR BioHackathon-Europe 2019, and decided implementation plans and schedules to implement a system for the search interface.
 
