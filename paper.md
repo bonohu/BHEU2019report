@@ -56,6 +56,10 @@ By gathering and then curating gene expresion datasets, those data not in NCBI G
 
 We tried to code with Jupyter Notebook in bash kernel, but it seems that CWL is suitable for our purpose. We are willing to use BioHackrXiv to publish our activity in the ELIXIR BioHackathon-Europe 2019.
 
+# Acknowledgement
+
+This work was funded by ELIXIR, the research infrastructure for life-science data, as part of the ELIXIR BioHackathon-Europe 2019.
+
 # References
 
 - Functional Annotation of Human Long Non-Coding RNAs via Molecular Phenotyping. doi: https://doi.org/10.1101/700864
@@ -63,6 +67,3 @@ We tried to code with Jupyter Notebook in bash kernel, but it seems that CWL is 
 - RefEx, a reference gene expression dataset as a web tool for the functional analysis of genes. doi: https://doi.org/10.1038/sdata.2017.105
 - The FANTOM5 project (collection). https://www.nature.com/collections/fantom5
 
-# Acknowledgement
-
-This work was funded by ELIXIR, the research infrastructure for life-science data, as part of the ELIXIR BioHackathon-Europe 2019.
