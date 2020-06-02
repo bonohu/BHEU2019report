@@ -18,12 +18,12 @@ date: 08 January 2020
 bibliography: paper.bib
 ---
 
-# State the problem you worked on
+# Abstract
 
-- Current available metadata for gene expression data is not sufficient enough to re-use.
-- Human resources are lacking to tackle the integration of gene expression data.
+Gene expression data have potential to obtain many new biomedical findings by reusing and integrating publicly available datasets since most of the datasets were usually analyzed only focusing on what their data producers have interests to (like genes of interests). However, we have the serveral issues to enable the efficient reuse of the public expression data: current available metadata for gene expression data is not sufficient enough to re-use; and human resources are lacking to tackle the integration of gene expression data. In the ELIXIR Biohackathon-Europe 2019, we discussed what is necessary to achieve a new analysis interface to utilze the FANTOM6 CAGE data after the knockdown of long ncRNAs (lncRNAs), considered possible solutions against the issues, and decided implmentation plans and scheduled to implement it.
 
-# Give the state-of-the art/plan
+
+# Introduction
 
 Gene expression data have been archived in public repositories, the NCBI Gene Expression Omnibus (GEO; https://www.ncbi.nlm.nih.gov/geo/) and the EBI ArrayExpress (AE; https://www.ebi.ac.uk/arrayexpress/). Unlike the International Nucleotide Sequence Database (https://www.insdc.org/), these two databases have not been exchanging data with each other. Furthermore, the DNA DataBank of Japan (DDBJ) in the National Institute of Genetics started a similar repository called the Genomic Expression Archive (GEA; https://www.ddbj.nig.ac.jp/gea/) in 2018. Hence there is a need for integration of these public gene expression databases.
 Thus, we have maintained an index of these public gene expression databases, called All Of gene Expression (AOE; https://aoe.dbcls.jp/en) to integrate gene expression data and make them all searchable together.
@@ -32,11 +32,16 @@ During the DBCLS/NDBC 2019 BioHackathon, we worked on the refinement of Referenc
 
 We felt that users wanted to reuse data from FANTOM6 project which was just published with bioRxiv preprint (https://doi.org/10.1101/700864; http://fantom.gsc.riken.jp/6/). The data consists of the large-scale expression profiles after the knockdown of long non-coding RNAs (lncRNAs) using several technologies including antisense oligo (ASO) and siRNA.
 
-Thus, we tackled the FANTOM6 data in the ELIXIR BioHackathon-Europe 2019, and decided implementation plans and schedules to implement a system for the search interface.
+The original purpose to perform the knock-down experiment in the FANTOM6 project was what genes are affected by the perturbation of a specific lncRNAs to elucidate the functions of the lncRNAs. However, other researchers can reuse the data by comparing their list of genes with speific phenotypes (for example, up-/down-regulated in specific experimental conditions/tissues). They can compare the list of genes with affected ones by the knock-down of a lncRNA and find potential key regulators related to the phenotype.
 
+There are several hurdles to provide an interface for the analysis.  The first issue is about the metadata of the FANTOM6 datasets. The current FANTOM6 metadata is designed only for understanding the dataset by readers of the FANTOM6 preprints and papers, and not for resuing them. For example, the sample information is not annotated based on well-known ontologies (e.g. cell ontology, cell line ontology, and tissue ontology). Another issue is related to a social aspect of the data management. Human resources are generally lacking to tackle the integration of gene expression data, especially in the field of the data engineers and curators. 
+
+We tackled the problems to achieve the reuse of the FANTOM6 data in the ELIXIR BioHackathon-Europe 2019 by making it clears what are issues and their possible solutions, and we decided implementation plans and schedules to implement a system for the search interface.
+
+# Results
 # Describe what you have done/results starting with the working group created...
 
-1. Clarified what is needed in the data production for gene expression data collection including FANTOM, GTEx and Human Cell Atlas. Especially, we eargely require well-annotated metdata to expression data for their reusability and human resoruces for the curation of the metadata.
+1. Clarified what is needed in the data production for gene expression data collection including FANTOM, GTEx and Human Cell Atlas. Especially, we eargely require well-annotated metadata to expression data for their reusability and human resoruces for the curation of the metadata.
 2. Discussed how to reuse Cap Analysis of Gene Expression (CAGE) data for lncRNA knockdown from FANTOM6. The knockdown expression profiles can potentially be (re)used for computational analysis to identify related (knock-down) genes to any types of biological stimulations (experimental treamtments).
 3. Designed the implementation to search an expression profile against data matrix above for associatable lncRNA. The search can hopefully be achieved by using an enrichment-like method with upreguated/downregulated genes in a different experiment.
 
