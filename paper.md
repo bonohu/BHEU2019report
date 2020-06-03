@@ -53,7 +53,7 @@ Metadata must be simultaneously collected during this data production processes,
 
 However, the simultaneous metadata collection is not straightforward. If experiment protocols are changed, the format of metadata should be adjusted to new protocols. If nomenclature of terms in the metadata is not fixed, the metadata collected from experimentalists cannot be unified.
 
-To be able to produce high-quality metadata, we need good data engineers and data curators. The data engineers can implement systems to collect necessary information. The data curators can decide and adjust the rules for the data collection and correct them if there are mistakes and errors. However, we, especially in Japan, usually don’t have such skilled people. Possible reasons are that we have not been able to provide career paths for such talents, and we have no courses for learning required skills for data engineers and curators. This is a social problem, and we need long time to solve them.
+To be able to produce high-quality metadata, we need good data engineers and data curators. The data engineers can implement systems to collect necessary information. The data curators can decide and adjust the rules for the data collection and correct them if there are mistakes and errors. However, we, especially in Japan, usually don't have such skilled people. Possible reasons are that we have not been able to provide career paths for such talents, and we have no courses for learning required skills for data engineers and curators. This is a social problem, and we need long time to solve them.
 
 
 ## Reusing Cap Analysis of Gene Expression (CAGE) data for lncRNA knockdown from FANTOM6 in other research projects.
