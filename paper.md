@@ -39,15 +39,31 @@ There are several hurdles to provide an interface for the analysis.  The first i
 We tackled the problems to achieve the reuse of the FANTOM6 data in the ELIXIR BioHackathon-Europe 2019 by making it clears what are issues and their possible solutions, and we decided implementation plans and schedules to implement a system for the search interface.
 
 # Results
-# Describe what you have done/results starting with the working group created...
 
-1. Clarified what is needed in the data production for gene expression data collection including FANTOM, GTEx and Human Cell Atlas. Especially, we eargely require well-annotated metadata to expression data for their reusability and human resoruces for the curation of the metadata.
-2. Discussed how to reuse Cap Analysis of Gene Expression (CAGE) data for lncRNA knockdown from FANTOM6. The knockdown expression profiles can potentially be (re)used for computational analysis to identify related (knock-down) genes to any types of biological stimulations (experimental treamtments).
-3. Designed the implementation to search an expression profile against data matrix above for associatable lncRNA. The search can hopefully be achieved by using an enrichment-like method with upreguated/downregulated genes in a different experiment.
+During the ELIXIR BioHackathon-Europe 2019, we discussed the following points about the reuse of gene expression data.
+
+1. Requirements in gene expression data production.
+2. Reusing Cap Analysis of Gene Expression (CAGE) data for lncRNA knockdown from FANTOM6 in other research projects.
+
+## Requirements in gene expression data production.
+
+We clarified what is needed in the data production for gene expression data collection including FANTOM, GTEx and Human Cell Atlas. For making large-scale data to be reusable in other projects, one of the important resources is a rich metadata explaining each dataset. During the data production in the large-scale projects, pieces of whole datasets are gradually stored. This is because data production processes, for example, sample collection, sequencing, and bioinformatics analysis, takes longer time until their finishing and sometimes need to be redone due to experimental failures.
+
+Metadata must be simultaneously collected during this data production processes, and its collection would be long-term work. If ones try to gather metadata after the finishing of the data production project, metadata collection is always tough or impossible. The source of metadata could be found as handwritten texts in lab notes. Technicians and research scientists who did experiments might be left from laboratories.
+
+However, the simultaneous metadata collection is not straightforward. If experiment protocols are changed, the format of metadata should be adjusted to new protocols. If nomenclature of terms in the metadata is not fixed, the metadata collected from experimentalists cannot be unified.
+
+To be able to produce high-quality metadata, we need good data engineers and data curators. The data engineers can implement systems to collect necessary information. The data curators can decide and adjust the rules for the data collection and correct them if there are mistakes and errors. However, we, especially in Japan, usually don’t have such skilled people. Possible reasons are that we have not been able to provide career paths for such talents, and we have no courses for learning required skills for data engineers and curators. This is a social problem, and we need long time to solve them.
+
+
+## Reusing Cap Analysis of Gene Expression (CAGE) data for lncRNA knockdown from FANTOM6 in other research projects.
+
+**Need to write texts here**
+
 
 # Conclusion
 
-After a stimulus discussion in the ELIXIR BioHackathon-Europe 2019, we could successfully make a plan to reuse the CAGE data for lncRNA knockdown in FANTOM6 project.
+After a stimulus discussion in the ELIXIR BioHackathon-Europe 2019, we could make clear the current issues in the transcriptome data production, and we also could successfully make a plan to reuse the CAGE data for lncRNA knockdown in FANTOM6 project.
 While the Reference Expression dataset in DBCLS (RefEx) currently includes transcriptome data for normal tissues and cell lines, we discussed how to reuse transcriptome data for knockdown.
 This is only a starting point to reuse public knockdown data, but these 'reuse-ready' data can be useful for molecular biology in the near future.
 
