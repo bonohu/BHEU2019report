@@ -86,8 +86,3 @@ This work was funded by ELIXIR, the research infrastructure for life-science dat
 
 # References
 
-- Functional Annotation of Human Long Non-Coding RNAs via Molecular Phenotyping. doi: https://doi.org/10.1101/700864
-- All of gene expression (AOE): an integrated index for public gene expression databases. doi: https://doi.org/10.1101/626754
-- RefEx, a reference gene expression dataset as a web tool for the functional analysis of genes. doi: https://doi.org/10.1038/sdata.2017.105
-- The FANTOM5 project (collection). https://www.nature.com/collections/fantom5
-
